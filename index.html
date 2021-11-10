@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/script.js"></script>
+    <link href="style/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="style/style.css" rel="stylesheet" type="text/css">
+  
+</head>
+<body style="background-color: grey;">
+    
+<div class="container" style="width: 100%;" >
+ <h1 style="text-align: center;">BOOK<span style="color: white;"><b>INGS</b></span></h1>  
+    <form id="book" action="receipt.html" >
+       
+        <div class="form-group">
+            <label for="name"><span style="font-family: sans-serif;"><b>FIRSTNAME</b></span></label> <br>
+        <input type="text" class="form-control" id="firstName" placeholder="FIRSTNAME" style=" width: 100%;">
+        </div>
+        <div  >
+            <label for="name"><span style="font-family: sans-serif;"><b>LASTNAME</b></span>:</label><br>
+        <input type="text" class="form-control" id="lastName" placeholder="LASTNAME" style="width: 100%;"><br>
+        </div>
+        <div>
+            <label for="name"><span style="font-family: sans-serif;"><b>DESCRIPTION OF APPOINTMENT</b></span>:</label><br>
+            <input type="text" name="des" id="des" class="form-control"><br> 
+        </div>
+        <div>
+        <label for="date"><span style="font-family: sans-serif;"><h5><b>Date for appointment</b></h5></span><label>
+        <input type="date" name="date" class="form-control" style="width: 100%;" id="date">
+        </div><br>
+        <div style="display: flex; width: 40%;">
+            <label for="time"><span style="font-family: sans-serif;"><b> Start</b></span></label><br>
+            <input type="time" name="time" class="form-control" id="time" > <br>
+        
+        
+            <label for="time"><span style="font-family: sans-serif;"><b> End</b></span></label><br>
+            <input type="time" name="time" class="form-control" id="timer"><br>
+        </div><br>
+        <h5><span style="font-family: sans-serif;"><b>Depature date & time</b></span></h5><br>
+        <div style="display: flex; width: 40%;">
+            <label for="date"><span style="font-family: sans-serif;"><b> Date</b></span></label><br>
+            <input type="date" name="date" class="form-control" > <br>
+        
+        
+            <label for="time"><span style="font-family: sans-serif;"><b> Time</b></span></label><br>
+            <input type="time" name="time" class="form-control"><br>
+        </div>
+       <div>
+        <label for="button"></label><br>
+        <button type="submit" id="btn"><span style="color: red; float: right;"><b>SUBMIT</b></span></button>
+
+       </div> <br>
+
+       
+       <div reciept="reciept.html"></div>
+       <script>
+        reciept();
+        </script>
+
+
+    </form>
+
+</div>
+
+    
+</body>
+</html>
